@@ -30,7 +30,7 @@ body::-webkit-scrollbar {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /*Text Shadow*/
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; /*Text Shadow*/
 }
 
 .main-title, .sub-title {
@@ -42,21 +42,21 @@ body::-webkit-scrollbar {
 
 .main-title {
     top: 40%;
-    font-size: 10rem;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /*Text Shadow*/
+    font-size: 10rem; /* Main Title Font Size */
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; /*Text Shadow*/
 }
 
 .sub-title {
     top: 60%;
-    font-size: 4rem;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /*Text Shadow*/
+    font-size: 4rem; /* Subtitle font size */
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; /*Text Shadow*/
 }
 
 .chevron-icon {
     position: absolute;
     top: 80%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Center the chevron */
     color: rgb(11, 46, 88);
     font-size: 15rem;
     z-index: 1;
@@ -73,7 +73,7 @@ body::-webkit-scrollbar {
         transform: translate(-50%, -50%) translateY(-20px);
     }
     60% {
-        transform: translate(-50%, -50%) translateY(-10px);
+        transform: translate(-50%, -50%) translateY(-10px); /* Bouncing effect */
     }
 }
 /* End First Section */
@@ -87,27 +87,27 @@ body::-webkit-scrollbar {
 
 .left-text, .right-text {
     position: absolute;
-    top: 50%;
+    top: 50%; /* Center the text vertically */
     transform: translateY(-50%);
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: #0b2e58;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; /*Text Shadow*/
 }
 
 .left-text {
     left: 10%;
     max-width: 40%;
-    font-size: 4rem;
+    font-size: 4rem; /* Left text font size */
     font-weight: bold;
 }
 
 .right-text {
     right: 10%;
     max-width: 40%;
-    font-size: 2rem;
+    font-size: 2rem; /* Right text font size */
     text-align: right;
 }
 .booknow-button {
-    background-color: rgb(11, 46, 88);
+    background-color: #0b2e58;
     color: white;
     padding: 25px 50px; 
     border: none;
@@ -128,7 +128,7 @@ body::-webkit-scrollbar {
     padding: 40px;
     text-align: center;
     background: url("../assets/img/3rdpagebg.jpg") no-repeat center center/cover;
-    height: 800px;
+    height: 800px; /* Height of the third section */
 }
 
 .destination-grid {
@@ -142,7 +142,7 @@ body::-webkit-scrollbar {
     width: 500px;
     height: 600px;
     position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box Shadow */
 }
 
 .destination img {
@@ -163,7 +163,7 @@ body::-webkit-scrollbar {
     bottom: 40px;
     left: 10px;
     color: rgb(255, 255, 255);
-    font-size: 1.9rem;
+    font-size: 1.9rem; /* Destination title font size */
     font-weight: 1800;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /*Text Shadow*/
 }
@@ -174,7 +174,7 @@ body::-webkit-scrollbar {
     left: 10%;
     transform: translate(-50%, -50%);
     color: rgb(11, 46, 88); 
-    font-size: 4rem; 
+    font-size: 4rem; /* Icon font size */
     z-index: 1; 
     box-shadow: inset;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; 
@@ -186,7 +186,7 @@ body::-webkit-scrollbar {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 4px; /* Rounded corners */
     cursor: pointer;
     font-size: 1rem;
     margin-top: 20px;
@@ -412,7 +412,7 @@ footer {
 }
 
 .contact-form button:hover {
-    background-color: #2570ca;
+    background-color: #1100ff;
 }
 
 footer .footer-content {
